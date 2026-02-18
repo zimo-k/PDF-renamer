@@ -1,0 +1,19 @@
+Windows Registry Editor Version 5.00
+
+; --- 1. 集成到文件夹右键菜单 ---
+[HKEY_CLASSES_ROOT\Directory\shell\pdf-renamer-zimo]
+@="使用 PDF重命名工具 处理此文件夹"
+"Icon"="F:\\Code\\location\\A. YukunWuCode\\论文重命名\\pdfrename-gui\\dist\\PDFrename_zimo.exe"
+
+[HKEY_CLASSES_ROOT\Directory\shell\pdf-renamer-zimo\command]
+@="\"F:\\Code\\location\\A. YukunWuCode\\论文重命名\\pdfrename-gui\\dist\\PDFrename_zimo.exe\" \"%1\""
+
+
+; --- 2. 集成到 PDF 文件右键菜单 ---
+; 使用 SystemFileAssociations 更加稳定，不会被其他 PDF 阅读器覆盖
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.pdf\shell\pdf-renamer-zimo]
+@="使用 PDF重命名工具 重命名"
+"Icon"="F:\\Code\\location\\A. YukunWuCode\\论文重命名\\pdfrename-gui\\dist\\PDFrename_zimo.exe"
+
+[HKEY_CLASSES_ROOT\SystemFileAssociations\.pdf\shell\pdf-renamer-zimo\command]
+@="\"F:\\Code\\location\\A. YukunWuCode\\论文重命名\\pdfrename-gui\\dist\\PDFrename_zimo.exe\" \"%1\""

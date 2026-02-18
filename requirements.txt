@@ -1,0 +1,8 @@
+# PyPDF2==3.0.1
+# pyinstaller==6.3.0 
+PyPDF2
+pyinstaller
+pdf2doi>=1.6
+pdf2bib>=1.2
+bibtexparser>=1.2.0
+colorama
